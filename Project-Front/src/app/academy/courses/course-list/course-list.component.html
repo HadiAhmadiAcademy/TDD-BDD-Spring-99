@@ -1,0 +1,26 @@
+<kendo-grid 
+            [data]="courses | async" 
+            [height]="410"
+            [pageSize]="state.take"
+            [skip]="state.skip"
+            [sort]="state.sort"
+            [filter]="state.filter"
+            [sortable]="true"
+            [pageable]="true"
+            [scrollable]="'none'"
+            filterable="menu"
+            (dataStateChange)="dataStateChange($event)"
+            >
+    <kendo-grid-column field="id" title="ID" width="40" filter="numeric" >
+    </kendo-grid-column>
+    <kendo-grid-column field="title" title="Title" width="250" >
+    </kendo-grid-column>
+    <kendo-grid-column width="120" filter="boolean">
+        <ng-template kendoGridCellTemplate let-dataItem>
+            <span class="k-icon k-i-edit pointer" (click)="edit(dataItem)"></span>
+            <span class="k-icon k-i-delete pointer" (click)="delete(dataItem)"></span>
+            <!-- <span class="k-icon k-i-edit pointer" [routerLink]="['/course/' + dataItem.id]"></span>
+            <span class="k-icon k-i-delete pointer" ></span> -->
+        </ng-template>
+    </kendo-grid-column>
+</kendo-grid>

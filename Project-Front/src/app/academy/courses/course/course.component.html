@@ -1,0 +1,12 @@
+
+<form #courseForm="ngForm">
+    <div>
+        <span> Id : {{model.id }}</span>
+    </div>
+    <div>
+        <input id="title" name="title" [(ngModel)]="model.title" required #title="ngModel" />
+        <span [hidden]="title.valid">*</span>
+    </div>
+
+    <button [disabled]="courseForm.invalid" (click)="save">Save</button>
+</form>

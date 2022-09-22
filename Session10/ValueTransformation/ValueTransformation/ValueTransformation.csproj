@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="faker.net" Version="1.3.77" />
+    <PackageReference Include="nbuilder" Version="6.1.0" />
+  </ItemGroup>
+
+</Project>

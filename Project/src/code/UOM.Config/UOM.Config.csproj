@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="autofac" Version="5.2.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="1.0.19269.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UOM.Application.Contracts\UOM.Application.Contracts.csproj" />
+    <ProjectReference Include="..\UOM.Application\UOM.Application.csproj" />
+    <ProjectReference Include="..\UOM.Domain\UOM.Domain.csproj" />
+    <ProjectReference Include="..\UOM.Persistence.EF\UOM.Persistence.EF.csproj" />
+    <ProjectReference Include="..\UOM.RestApi\UOM.RestApi.csproj" />
+  </ItemGroup>
+
+</Project>

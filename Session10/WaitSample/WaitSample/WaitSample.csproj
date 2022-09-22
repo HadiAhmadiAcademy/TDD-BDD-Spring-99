@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="selenium.webdriver" Version="3.141.0" />
+    <PackageReference Include="selenium.webdriver.chromedriver" Version="84.0.4147.3001" />
+  </ItemGroup>
+
+</Project>

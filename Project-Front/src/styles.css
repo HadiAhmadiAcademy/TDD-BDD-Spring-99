@@ -1,0 +1,206 @@
+/* You can add global styles to this file, and also import other style files */
+body,li,p,h1,h2,h3,ul{
+	margin:0px;
+	padding:0px;
+}
+@font-face {
+    font-family: "BYekan";
+    src: url("assets/font/BYekan.eot?#") format("eot"), url("assets/font/BYekan.woff") format("woff"), url("assets/font/BYekan.ttf") format("truetype");
+}
+li{
+	list-style:none
+}
+img{
+	border:none
+}
+body{
+	/* direction:rtl; */
+	font:8pt/1.7 Tahoma, Geneva, sans-serif;
+}
+body{
+	background:url(assets/image/nav.png) right repeat-y;
+}
+div.menu{
+	width:100%;
+	position:fixed;
+	z-index:22;
+	top:0px;
+	right:0px;
+	height:40px;
+	background-image:linear-gradient(#373B44, #292C33);
+	box-shadow:0 1px 5px rgba(0, 0, 0, 0.6);
+}
+div.nav{
+	width:200px;
+	position:fixed;
+	top:40px;
+	right:0px
+}
+div.nav ul{
+    border: 1px solid #15161A;
+    border-radius:5px;
+    box-shadow: 0 0 1px #7E8596;
+    margin: 15px 10px;
+	overflow:hidden
+}
+div.nav ul li.active div.fix,div.nav ul li.active:hover div.fix{
+	background-image:linear-gradient(#5970A3, #394768);
+	color:#c3d2f5
+}
+div.nav ul li{
+	position:relative;
+	font:16px BYekan;
+	color:#ccc;
+	border-bottom:1px solid #090A0C;
+	cursor:pointer;
+}
+div.nav ul li div.fix{
+	height:40px;
+	display:block;
+	position:relative;
+	background-image:linear-gradient(#373B44, #2C2F36);
+}
+div.nav ul li:hover  div.fix{
+	background-image:linear-gradient(#494F5B, #353941)
+}
+div.nav ul li:hover div.fix{
+	color:#FFF
+}
+div.nav ul li:last-child{
+	border-bottom:none
+}
+span.ico {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+	opacity:0.6;
+	transition:all 0.7s
+}
+span.value{
+	position:absolute;
+	top:8px;
+	right:40px;
+}
+div.nav ul li:hover span.ico{
+	opacity:10;
+}
+div.nav ul li ul{
+	border:none;
+    box-shadow:none;
+    margin:inherit;
+	overflow:auto;
+	border-radius:0px;
+	display:none;
+}
+div.nav ul li ul li{
+	position:relative;
+	display:block;
+	background:#ccc;
+	font:11px Tahoma, Geneva, sans-serif;
+	color:#ccc;
+	border-bottom:1px solid #999;
+	cursor:pointer;
+}
+div.nav ul li ul li a{
+	text-decoration:none;
+	color:#333333;
+	display:block;
+	padding:6px;
+}
+div.nav ul li ul li:hover{
+	background:#f4f4f4
+}
+div.content{
+	margin-right:210px;
+	margin-top:50px;
+}
+.quick li {
+    display: inline-block;
+    margin: 10px 4px 0 0;
+}
+.quick li a {
+    background: linear-gradient(#F6F6F6, #E6E6E6) repeat scroll 0 0 transparent;
+    border: 1px solid #BBBBBB;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 0 #FFFFFF inset, 0 1px 0 #FFFFFF;
+    color: #555555;
+    display: block;
+    font-size: 12px;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+}
+.quick li a img {
+	display:block;
+    height: 32px;
+    margin: 0 auto;
+    width: 32px;
+}
+h2{
+	font:16px BYekan;
+	padding:4px;
+	margin:10px 2px;
+	color:#999;
+	cursor:default;
+	background:#eee;
+}
+.fild{
+	background:linear-gradient(to bottom, #FFFFFF 0%, #F4F4F4 100%) repeat scroll 0 0 transparent;
+	padding:4px;
+	margin:2px;
+	font:8pt/1.7 Tahoma, Geneva, sans-serif;
+	border:1px solid #CCC;
+}
+.btn{
+	background:linear-gradient(to bottom, #647AAB, #2C467E);
+	padding:8px 12px;
+	cursor:pointer;
+	border:1px solid #2C467E;
+	border-radius:4px;
+	margin:4px;
+	font:8pt Tahoma, Geneva, sans-serif;
+	color:#FFFFFF;
+}
+.b1{
+	background:linear-gradient(to bottom, #555, #111);
+	border-color:#333;
+}
+.b2{
+	background:linear-gradient(to bottom, #d63e3e, #b31919);
+	border-color:#b31919;
+}
+.b3{
+	background:linear-gradient(to bottom, #69b319, #578e1c);
+	border-color:#578e1c;
+}
+.b4{
+	background:linear-gradient(to bottom, #e8b15b, #b27d29);
+	border-color:#b27d29;
+}
+.b5{
+	background:linear-gradient(to bottom, #29aab2, #187278);
+	border-color:#187278;
+}
+.demo-container {
+	width: 600px;
+	height: 320px;
+}
+
+.demo-placeholder {
+	width: 400px;
+	height: 300px;
+	font-size: 14px;
+	line-height: 1.2em;
+}
+
+.legend table {
+	border-spacing: 5px;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+.active-menu {
+	color: red;
+}
